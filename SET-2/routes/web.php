@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
+
+Route::get('/students',[StudentController::class,'index'])
+    ->name('students.index');
+
+Route::get('/student-form',[StudentController::class,'create'])
+    ->name('students.create');
+
+Route::post('/students/store',[StudentController::class,'store'])
+    ->name('students.store');
+
+Route::get('/student/{id}',[StudentController::class,'show'])
+    ->name('students.show');
+
+Route::get('/', function () {
+    return view('welcome');
+});
