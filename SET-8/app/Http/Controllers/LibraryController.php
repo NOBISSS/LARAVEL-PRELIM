@@ -44,7 +44,7 @@ class LibraryController extends Controller
             'price'=>$request->price,
         ]);
 
-        return view('lib.create')->with('success','Book Added Successfully');
+        return redirect()->route('library.index')->with('success','Book Added Successfully');
     }
 
     /**
