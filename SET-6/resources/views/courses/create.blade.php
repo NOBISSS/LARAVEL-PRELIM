@@ -12,9 +12,9 @@
             <p>{{$error}}</p>
         @endforeach
     @endif
-    @if($success))
+    @if(@session('success'))
         <div>
-            <p>✅ {{$success}}</p>
+            <p>✅ {{session('success')}}</p>
         </div>
     @endif
     <div>

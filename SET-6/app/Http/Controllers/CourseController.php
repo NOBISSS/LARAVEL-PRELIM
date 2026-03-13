@@ -31,7 +31,9 @@ class CourseController extends Controller
             'fees'=>$request->fees,
         ]);
 
-        return view('courses.create')->with('success','Course Created Successfully');
+        session()->flash('success','Course Created Successfully');
+
+        return view('courses.create');
     }
 
     public function show($id)

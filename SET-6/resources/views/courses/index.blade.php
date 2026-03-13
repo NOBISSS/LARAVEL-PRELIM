@@ -38,5 +38,6 @@
         <p>No Course Created Yet</p>
         <a href="/course-form">Create </a>
     @endif
+    <a href="/course-form">Create </a>
 </body>
 </html>
